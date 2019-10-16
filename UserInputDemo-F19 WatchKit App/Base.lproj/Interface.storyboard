@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15400"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="UserInputDemo_F19_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="What time is class?" textAlignment="left" numberOfLines="2" id="q8M-b7-lQ2"/>
+                        <label alignment="left" text="response Label" textAlignment="center" id="sJn-g1-rAO">
+                            <color key="textColor" red="0.26861357689999998" green="1" blue="0.064526446160000001" alpha="1" colorSpace="deviceRGB"/>
+                        </label>
+                        <button width="1" alignment="left" title="Button" id="zqJ-yC-NIa">
+                            <color key="backgroundColor" name="selectedContentBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            <connections>
+                                <action selector="replyButtonPressed" destination="AgC-eL-Hgc" id="IyK-z4-Dvp"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="responseLabel" destination="sJn-g1-rAO" id="FiQ-lK-nA7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="129" y="116"/>
+        </scene>
+    </scenes>
+</document>
